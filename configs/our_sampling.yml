@@ -1,0 +1,10 @@
+model:
+  checkpoint: None_for_diffusion_path_checkpoint
+
+sample:
+  seed: 2021
+  num_samples: 100  # 100 ligand for one protein
+  num_steps: 1000  # time_step
+  pos_only: False  # x and v
+  center_pos_mode: protein  # get relative position by center position of protein
+  sample_num_atoms: prior  # p(xt-1|pred_x0, xt)
